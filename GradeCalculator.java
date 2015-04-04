@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class GradeCalculator {
 
@@ -30,7 +31,7 @@ public class GradeCalculator {
 			catagoryPercents.put(name, percent);
 			System.out.print("\033[H\033[2J");
 			System.out.flush();
-			for (HashMap.Entry<String, Double> entry : catagoryPercents
+			for (Map.Entry<String, Double> entry : catagoryPercents
 					.entrySet()) {
 				System.out.println(entry.getKey() + ", " + entry.getValue());
 			}
